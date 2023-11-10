@@ -1,7 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
-import CoinCard from "./components/CoinCard.jsx";
+
+import CoinCard from "./components/CoinCard";
 
 const App = () => {
   const [coinPrices, setCoinPrices] = useState();
@@ -24,7 +25,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center">
+    <div className="min-h-screen flex flex-col justify-center items-center ">
       {coinPrices ? (
         <ul className="w-96">
           <Slider
