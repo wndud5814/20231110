@@ -3,8 +3,7 @@ const CoinCard = ({ coinPrice, btcPrice }) => {
     <li className="text-xl flex justify-center items-center">
       <img
         className="w-12 inline-block"
-        src={`./images/${coinPrice.market.substring(4)}.png`}
-        alt={`${coinPrice.market.substring(4)}`}
+        src={`./images/${coinPrice.market.substring(4).toLowerCase()}.png`}
       />
       <span className="ml-2 w-16 inline-block">
         {coinPrice.market.substring(4)}
